@@ -2,6 +2,7 @@ name: ci
 
 env:
   CONFIG_REPO_NAME: argocd-course-webapp-config
+  PASSWORD: Ranaut@999
   
 on:
   push:
@@ -48,7 +49,7 @@ jobs:
           echo "promoting into dev environment!"
           git config --global user.email nishant.ranaut9@gmail.com && git config --global user.name NishantRanout
           echo "cloning config repo $CONFIG_REPO_NAME"
-          git clone https://NishantRanout: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@github.com/NishantRanout/argocd-course-webapp-config.git
+          git clone https://NishantRanout:${PASSWORD}@github.com/NishantRanout/argocd-course-webapp-config.git
           cd argocd-course-webapp-config
           echo "checkout main branch"
           git checkout main
