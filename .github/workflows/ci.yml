@@ -48,7 +48,7 @@ jobs:
           echo "promoting into dev environment!"
           git config --global user.email nishant.ranaut9@gmail.com && git config --global user.name NishantRanout
           echo "cloning config repo $CONFIG_REPO_NAME"
-          git clone https://oauth2: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@github.com/${{ github.repository_owner }}/$CONFIG_REPO_NAME.git
+          git clone https://oauth2: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@github.com/${{ github.repository_owner }}/$CONFIG_REPO_NAME.git
           cd $CONFIG_REPO_NAME
           echo "checkout main branch"
           git checkout main
