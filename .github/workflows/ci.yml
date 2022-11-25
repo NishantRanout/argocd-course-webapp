@@ -46,7 +46,7 @@ jobs:
     steps:
       - run: |
           echo "promoting into dev environment!"
-          git config --global user.email ci-bot@argocd.com && git config --global user.name ci-bot
+          git config --global user.email nishant.ranaut9@gmail.com && git config --global user.name NishantRanout
           echo "cloning config repo $CONFIG_REPO_NAME"
           git clone https://oauth2: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@github.com/${{ github.repository_owner }}/$CONFIG_REPO_NAME.git
           cd $CONFIG_REPO_NAME
